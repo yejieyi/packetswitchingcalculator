@@ -13,7 +13,8 @@ function calculate(){
         p+= fact(num)/(fact(a)*fact(b))*Math.pow(activeP,a)*Math.pow(1-activeP,b);
     }
     alert("probability is: "+p);
-    return p;
+    // return p;
+    return false;
     // alert(tbandwidth);
     // console.log(tbandwidth);
     // alert(tbandwidth);
