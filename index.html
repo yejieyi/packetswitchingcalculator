@@ -11,7 +11,15 @@
     <title>Packet Switching Calculator</title>
   </head>
   <body>
-    <h1>Packet Switching Calculator - busy probability</h1>
+    <div class="container">
+      <!-- Content here -->
+      <div class="jumbotron">
+        <h1 class="display-4">Packet Switching Calculator - busy probability</h1>
+        <p class="lead">This is a simple calculator to help you find the probability a user reaching at a netwrok find out the network is busy</p>
+        <p>Example: Consider a 4Mbps network is shared by multiple users. 
+          Each user needs 500 kbps during active transmission and each user is active for only 15% of the time. 
+          If such network is shared by 20 users, you can get the probability of network busy for a user by enter <b>"4m"</b> in <b>Total bandwidth</b>, <b>"500k"</b> in <b>Bandwidth per user</b>, <b>"0.15"</b> for <b>Active Percentage</b> and <b>"20"</b> for <b>number of users</b>. </p>
+      </div>
     <form onsubmit="return calculate()"> 
       <div class="form-group row">
         <label for="tbandwidth" class="col-sm-2 col-form-label">Total bandwidth: (bps) (e.g. 10m, 10k, 100g)</label>
@@ -32,7 +40,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="num" class="col-sm-2 col-form-label">Number of user:</label>
+        <label for="num" class="col-sm-2 col-form-label">Number of users:</label>
         <div class="col-sm-10">
           <input type="text" required class="form-control" id="num">
         </div>
@@ -40,6 +48,8 @@
       <button type="submit" class="btn btn-primary">Calculate</button>
     </form>
     <div id="result"></div>
+    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
